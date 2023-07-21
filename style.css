@@ -1,0 +1,482 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline:none;
+  box-sizing:border-box;
+  text-decoration:none;
+  list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  font: weight 400;
+}
+html{
+  font-size: 63%;
+  scroll-behavior: smooth;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionHeading {
+  font-size: 5rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-bottom: 15rem;
+  border-bottom: .3rem solid #333;
+  text-shadow: .2rem .2rem .5rem #65b8b1;
+}
+
+
+/* Secyion 1 */
+.section1{
+  width: 100%;
+  height:100vh;
+  background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .3)), url(image/bgpic.jpg) center no-repeat;
+  background-size: cover;
+  flex-direction: column;
+ 
+}
+.section1-heading{
+  font-size:6rem ;
+  font-weight: 700;
+  color: white;
+  background-color:rgba(125, 193, 190, 0.9);
+  border-radius: 10px;
+  padding: 0 3rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  border-bottom:.3rem solid black ;
+  text-shadow:0.2rem 0.2rem 1rem ;
+  
+}
+
+.avater-img{
+  width:25rem;
+  height:25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border:0.3rem solid black;
+  background-color: rgba(255, 255, 255, .7);
+  padding: .5rem;
+  opacity: .9;
+  transition: transform 0.3s;
+}
+.avater-img:hover {
+  transform: scale(1.1);
+}
+.person-name{
+  font-size: 2rem;
+  color:white;
+  background-color: rgba(125, 193, 190, 0.4);
+  margin: 5rem 0;
+  padding: .5rem 2rem;
+  letter-spacing: .3rem;
+  border-radius: 10px;
+  border-bottom: .2rem solid black;
+  text-shadow: 0.2rem 0.2rem 1rem ;
+}
+
+.section1-btn{
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: black;
+  background-color: aliceblue;
+  border: .2rem solid black;
+  padding:0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: .2rem .2rem .1rem #65b8b1;
+}
+/* section1 end */
+/* Navbar */
+.navbar{
+  width: 100%;
+  height:4rem;
+  background-color: rgb(191, 228, 223,0.6);
+  box-shadow: .2rem .2rem 5rem #65b8b1;
+
+}
+.navbar-link{
+  font-size: 1.7rem;
+  font-weight:600 ;
+  color: black;
+  margin: 0 3rem;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: color .2s;
+  text-shadow: .2rem .2rem .1rem #65b8b1;
+}
+
+.navbar-link:hover{
+  color: white ;
+  text-shadow: .2rem .2rem .1rem #65b8b1;
+}
+.navbar-link::before{
+  content:"";
+  width: 0;
+  height:.2rem ;
+  background-color: white;
+  position: absolute;
+  right: -15%;
+  bottom: -.3rem;
+  transition: width 0.2s;
+ 
+
+}
+.navbar-link:hover::before{
+  width:130%;
+}
+/* Navbar end */
+/* section 2 */
+.section2{
+  width: 100%;
+  height: 100%;
+  padding: 15rem 0 10rem 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2-heading{
+  margin-bottom: 2rem;
+ 
+}
+.aboutMeText{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  text-shadow: .2rem .2rem .5rem rgba(167, 215, 209, 0.7);
+  margin-bottom: 5rem;
+}
+.progressBarWrapper{
+  margin-bottom:10rem ;
+}
+.progressBar{
+  width: 60rem;
+  height: 3rem;
+  background-color: rgba(167, 215, 209, 0.4);
+  margin: 1.5rem 0;
+  border-radius: .3rem;
+  box-shadow: .2rem .7rem 0.8rem #65b8b1;
+  position: relative;
+}
+.progressText{
+  position:absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+.progressText span{
+  margin:0 .5rem ;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+}
+.progressBar.html .progressPer{
+  width: 70%;
+  height: 100%;
+  background-color: rgba(167, 215, 209, 0.9);
+  border-radius: .3rem;
+}
+.progressBar.css .progressPer {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(167, 215, 209, 0.9);
+  border-radius: .3rem;
+}
+.progressBar.jav .progressPer {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(167, 215, 209, 0.9);
+  border-radius: .3rem;
+}
+.progressBar.py .progressPer {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(167, 215, 209, 0.9);
+  border-radius: .3rem;
+}
+.progressBar.dj .progressPer {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(167, 215, 209, 0.9);
+  border-radius: .3rem;
+}
+.progressBar.mys .progressPer {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(167, 215, 209, 0.9);
+  border-radius: .3rem;
+}
+
+.services{
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.service{
+  text-align: center;
+}
+.service:first-child,.service:last-child{
+  align-self: flex-start;
+}
+.service i{
+  font-size: 10rem;
+  color:#65b8b1;
+  margin-bottom: 2rem;
+  text-shadow: .1rem .5rem .5rem #65b8b1;
+}
+.service h2{
+  font-size: 2rem;
+  color: white;
+  background-color:#65b8b1;
+  width: 25rem;
+  letter-spacing: .2rem;
+  box-shadow:.2rem .2rem .1rem #65b8b1;
+  border-radius: 3rem;
+  text-shadow: .2rem .2rem .4rem;
+  padding-bottom: .5rem;
+}
+/* section2 end */
+/* section 3 */
+.section3{
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  background-color:rgba(167, 215, 209, 0.4) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.projectImg{
+  width: 600px;
+  height: 337px;
+}
+.projectWrapper{
+  width: 80%;
+  flex-wrap: wrap;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: white;
+  box-shadow:.3rem .3rem .7rem black;
+  border-radius: .5rem;
+  transition: .8s;
+  
+}
+.project:hover{
+  transform: scale(.9);
+  box-shadow: .3rem .3rem 2rem #333;
+}
+.projectText{
+  text-align: center;
+  letter-spacing: .1rem;
+  
+}
+.projectName{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+  text-shadow: .1rem .2rem .2rem #65b8b1;
+}
+.projectTechnolgy{
+  font-size: 1.8rem;
+  color: #65b8b1;
+  text-shadow: .1rem .2rem .2rem black;
+}
+.projectLink{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  text-shadow: .2rem .5rem .2rem rgba(167, 215, 209, 0.4);
+  letter-spacing: .1rem;
+  border: .3rem solid #333;
+  padding: 0 1rem;
+  margin: 1rem 1rem;
+  background-color: white;
+  border-radius: .4rem;
+  transition: .5s;
+}
+.projectLink:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/* section 3 end */
+/* section 4 */
+.section4{
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section4-heading{
+  color: #333;
+  box-shadow: .2rem .2rem .5rem #333;
+  border: .2rem solid #333;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+.contactForm{
+  width: 50rem;
+  flex-direction: column;
+}
+.contactForm input, .contactForm textarea{
+  width:100% ;
+  padding: .5rem;
+  margin: .5rem 0;
+  background-color: rgba(167, 215, 209, 0.2);
+  font-size: 1.5rem;
+  border:.2rem solid #333 ;
+  color: black;
+}
+.contactForm textarea{
+  height: 10rem;
+  min-height: 5rem;
+  max-height: 15rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+.contactForm .contactFormButton{
+  background-color: #333;
+  color: white;
+  text-transform:uppercase ;
+  letter-spacing: .4rem;
+  text-shadow: .2rem .2rem .2rem rgba(167, 215, 209, 0.4);
+  cursor: pointer;
+}
+.contactFormButton:hover{
+  transform: scale3d(1,1.2,1);
+  color: black;
+  background-color: white;
+}
+/* section 4 end */
+/* Footer */
+.section5{
+  width: 100%;
+  height: 30vh;
+  background-color:rgba(167, 215, 209, 0.2) ;
+  flex-direction: column;
+}
+.socialMedia{
+  margin-bottom: 5rem;
+}
+.socialMediaLink{
+  margin: 0 2rem;
+  padding: .7rem;
+  background-color: white;
+  border-radius: .5rem;
+  display: inline-block;
+  box-shadow: .2rem .2rem .2rem #333;
+  
+}
+.socialMediaLink i{
+  font-size: 3rem;
+  color: #333;
+}
+.copyright{
+  color: #333;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  font-weight: 300;
+  text-align: center;
+
+}
+/* Footer end */
+/* responsive */
+
+@media(max-width: 1200px)
+{
+  .services{
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+.service{
+  margin: 3rem 2rem;
+}
+.section4{
+  height: 80vh;
+}
+}
+
+@media (max-width: 800px) {
+  .section1-heading{
+    font-size:4rem ;
+  }
+  .progressBar{
+    width: 50rem;
+  }
+  
+}
+@media (min-width:660) and (max-width: 799px){
+.projectImg {
+    width: 15rem;
+  }
+}
+@media(max-width:659px){
+  .projectImg{
+    width: 100%;
+  }
+}
+@media(max-width:600px){
+  .section2{
+    padding: 10rem;
+  }
+    .contactForm {
+      width: 40rem;
+    }
+  .section2-heading{
+    margin-bottom: 10rem;
+  }
+  .progressBar{
+    width: 45rem;
+  }
+}
+@media(max-width:500px){
+  .navbar-link {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+
+    }
+        .section2-heading {
+          font-size: 3rem;
+        }
+        .progressBar {
+          width: 40rem;
+        }
+    .contactForm{
+      width: 40rem;
+    }
+    .copyright{
+      width: 70%;
+    }
+        .section1-heading {
+          font-size: 3rem;
+        }
+}
+@media(max-width:450px){
+  .progressBar {
+      width: 30rem;
+    }
+    html{
+      font-size: 45%;
+    }
+}
+/* responsive end */
